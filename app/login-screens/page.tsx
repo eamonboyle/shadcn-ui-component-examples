@@ -1,6 +1,6 @@
-import LoginComponent from "@/components/login-components/login-component";
+import LoginComponent from "@/components/authentication-components/login-component";
 
-const LoginScreensPage = () => {
+const LoginPage = () => {
     return (
         <div>
             <div className="pt-4">
@@ -10,4 +10,4 @@ const LoginScreensPage = () => {
     );
 };
 
-export default LoginScreensPage;
+export default LoginPage;

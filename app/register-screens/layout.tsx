@@ -35,8 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
 
                 <div className="max-w-md mx-auto mt-20 flex items-center text-primary gap-4">
-                    <Link href="/login-screens">Variation 1</Link>
-                    <Link href="/login-screens/second">Variation 2</Link>
+                    <Link href="/register-screens">Variation 1</Link>
+                    <Link href="/register-screens/second">Variation 2</Link>
                 </div>
                 {children}
             </body>

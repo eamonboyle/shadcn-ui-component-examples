@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "NextJS shadcn-ui Component Library",
+    title: "shadcn/ui Component Library",
     description: "A display of what is possible with shadcn-ui and NextJS",
 };
 
