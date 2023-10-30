@@ -36,7 +36,7 @@ const HealthAppPage = () => {
             specialization: "General Practitioner",
         },
         {
-            id: 1,
+            id: 2,
             date: "2023-10-27",
             patientName: "John Doe",
             diagnosis: "Flu",
@@ -46,7 +46,7 @@ const HealthAppPage = () => {
             specialization: "General Practitioner",
         },
         {
-            id: 1,
+            id: 3,
             date: "2023-10-27",
             patientName: "John Doe",
             diagnosis: "Flu",
