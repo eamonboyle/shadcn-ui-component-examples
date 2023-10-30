@@ -18,7 +18,7 @@ const Profile = ({ userDetails }: ProfileProps) => {
     return (
         <div className="flex flex-col">
             <div className="flex">
-                <Avatar>
+                <Avatar className="w-12 h-12">
                     <AvatarImage src={userDetails.avatar} alt="Avatar" />
                     <AvatarFallback>
                         {userDetails.name.split(" ")[0][0] + "" + userDetails.name.split(" ")[1][0]}

@@ -58,24 +58,24 @@ const HealthAppPage = () => {
     ]);
 
     return (
-        <div className="h-screen">
+        <div>
             <DashboardHeader name={user.name.split(" ")[0]} />
 
-            <div className="flex p-4 gap-4">
-                <div className="w-3/4 space-y-5">
+            <div className="flex flex-col xl:flex-row p-4 gap-4">
+                <div className="xl:w-3/4 space-y-5">
                     <HealthStats user={user} />
                     <UserProfile user={user} />
                 </div>
-                <div className="w-1/4">
+                <div className="xl:w-1/4">
                     <UpcomingConsultations />
                 </div>
             </div>
 
-            <div className="flex p-4 gap-4">
-                <div className="w-1/3">
+            <div className="flex flex-col xl:flex-row p-4 gap-4">
+                <div className="xl:w-1/3">
                     <QuickActions />
                 </div>
-                <div className="w-2/3">
+                <div className="xl:w-2/3">
                     <RecentConsultations consultations={recentConsultations} />
                 </div>
             </div>

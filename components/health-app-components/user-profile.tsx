@@ -11,15 +11,15 @@ type UserProfileProps = {
 const UserProfile: React.FC<UserProfileProps> = ({ user }) => {
     return (
         <Card title="User Profile">
-            <div className="flex">
-                <div className="flex flex-col gap-4 p-8">
+            <div className="flex flex-col lg:flex-row">
+                <div className="flex flex-col items-center lg:items-start p-8">
                     <Avatar className="w-24 h-24 border">
                         <AvatarImage src={user.avatar} alt={`${user.name}'s avatar`} />
                     </Avatar>
-                    <h2 className="text-lg font-bold">{user.name}</h2>
-                    <span className="text-gray-400">NHS ID: {user.id}</span>
+                    <h2 className="text-md font-bold mt-4">{user.name}</h2>
+                    <span className="text-sm text-gray-400">NHS ID: {user.id}</span>
                 </div>
-                <div className="ml-4 border-l p-8 flex-grow flex items-center">
+                <div className="lg:ml-4 lg:border-l p-8 flex-grow flex items-center">
                     <div className="grid grid-cols-4 gap-8 flex-grow">
                         <ProfileDetail label="Age" value={user.age} />
                         <ProfileDetail label="Date of Birth" value={user.dateOfBirth} />
@@ -44,15 +44,17 @@ const ProfileDetail: React.FC<ProfileDetailProps> = ({ label, value }) => {
     if (label === "Status")
         return (
             <div className="space-y-1">
-                <div className="text-xl">{label}</div>
-                <div className="text-sm font-semibold bg-green-400 text-green-800 w-fit p-2 rounded-xl">{value}</div>
+                <div className="text-md">{label}</div>
+                <div className="text-xs font-semibold bg-green-400 text-green-800 w-fit p-1 px-2 rounded-xl">
+                    {value}
+                </div>
             </div>
         );
 
     return (
         <div className="space-y-1">
-            <div className="text-xl">{label}</div>
-            <div className="text-2xl font-semibold">{value}</div>
+            <div className="text-sm">{label}</div>
+            <div className="text-md font-semibold">{value}</div>
         </div>
     );
 };

@@ -27,8 +27,8 @@ const DashboardHeader = ({ name }: DashboardHeaderProps) => {
                     </p>
                 </div>
 
-                <div className="bg-white p-4 px-8 border border-gray-200 rounded-lg flex items-center gap-5">
-                    <div className="bg-gray-200 rounded-full p-3">
+                <div className="bg-white p-2 xl:p-4 xl:px-8 border border-gray-200 rounded-lg flex flex-col text-center lg:flex-row items-center gap-5">
+                    <div className="bg-gray-200 rounded-full p-3 hidden lg:block">
                         <Calendar className="w-6 h-6" />
                     </div>
                     <div className="space-y-1">

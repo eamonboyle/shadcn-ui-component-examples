@@ -8,7 +8,7 @@ type HealthStatsProps = {
 
 const HealthStats = ({ user }: HealthStatsProps) => {
     return (
-        <div className="flex justify-around gap-4">
+        <div className="flex flex-col xl:flex-row xl:justify-around gap-4">
             <HealthStat label="Blood pressure" value="118/75" unit="mm/hg" status="Healthy" icon={<Thermometer />} />
             <HealthStat label="Cholesterol levels" value="164" unit="mg/dl" status="Healthy" icon={<Box />} />
             <HealthStat label="Glucose levels" value="5.5" unit="mmol/L" status="Healthy" icon={<Sun />} />

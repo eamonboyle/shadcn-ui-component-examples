@@ -13,10 +13,10 @@ const Navbar = () => {
             <div className="flex w-full justify-between items-center">
                 <Input placeholder="Search here..." className="w-1/2 mr-24 py-5 bg-gray-200/20" />
                 <div className="flex items-center gap-2">
-                    <Button variant="ghost" className="bg-gray-200 rounded-full w-12 h-12">
+                    <Button variant="ghost" className="bg-gray-200 rounded-full p-3 w-10 h-10">
                         <Bell className="w-12 h-12" />
                     </Button>
-                    <Avatar className="w-12 h-12 border">
+                    <Avatar className="w-10 h-10 border">
                         <AvatarImage src="/avatar-male.png" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>

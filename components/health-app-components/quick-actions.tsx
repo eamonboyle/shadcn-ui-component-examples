@@ -50,12 +50,12 @@ type QuickActionProps = {
 
 const QuickAction = ({ title, description, icon, onClick }: QuickActionProps) => {
     return (
-        <div className="border-b border-gray-100 pb-3 flex items-center gap-2">
+        <div className="border-b border-gray-100 pb-3 flex items-center gap-2 last:border-0">
             <div className="bg-gray-200 p-4 rounded-full">{icon}</div>
             <Button onClick={onClick} type="button" variant="ghost" className="flex-grow p-0">
                 <div className="flex flex-col flex-grow gap-1 text-left p-3">
-                    <span className="font-semibold text-lg">{title}</span>
-                    <span className="text-gray-400">{description}</span>
+                    <span className="font-semibold text-sm">{title}</span>
+                    <span className="text-gray-400 text-xs">{description}</span>
                 </div>
                 <div>
                     <ChevronRight />

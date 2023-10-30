@@ -170,26 +170,24 @@ const ConsultDoctorPage = () => {
     };
 
     return (
-        <div className="h-screen">
-            <div className="p-4 space-y-4">
-                <div className="flex items-center justify-between">
-                    <div>
-                        <h1 className="text-2xl font-semibold mb-2">Consult a Doctor</h1>
-                        <p className="text-gray-500">Check and filter all your medical appointments here </p>
-                    </div>
-
-                    <div>
-                        <Button className="flex items-center gap-2 text-md">
-                            <PlusCircle className="w-5 h-5" />
-                            New Consultation
-                        </Button>
-                    </div>
+        <div className="p-4 space-y-4">
+            <div className="flex items-center justify-between">
+                <div>
+                    <h1 className="text-2xl font-semibold mb-2">Consult a Doctor</h1>
+                    <p className="text-gray-500">Check and filter all your medical appointments here </p>
                 </div>
 
-                <TabFilter consultations={consultations} activeTab={activeTab} setActiveTab={handleTabChange} />
-
-                <ConsultationsDataTable consultations={consultations} />
+                <div>
+                    <Button className="flex items-center gap-2 text-md">
+                        <PlusCircle className="w-5 h-5" />
+                        New Consultation
+                    </Button>
+                </div>
             </div>
+
+            <TabFilter consultations={consultations} activeTab={activeTab} setActiveTab={handleTabChange} />
+
+            <ConsultationsDataTable consultations={consultations} />
         </div>
     );
 };

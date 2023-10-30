@@ -14,11 +14,11 @@ const TabFilter: React.FC<TabFilterProps> = ({ consultations, activeTab, setActi
         <div className="consultation-filter flex items-center gap-4">
             <TabFilterButton onClick={() => setActiveTab("all")} isActive={activeTab === "all"}>
                 <div className="flex items-center gap-4">
-                    <Cross className={cn("w-5 h-5", activeTab !== "all" ? "text-[#98A2B3]" : "text-primary")} />
-                    All Visits
+                    <Cross className={cn("w-4 h-4", activeTab !== "all" ? "text-[#98A2B3]" : "text-primary")} />
+                    <span className="text-sm">All visits</span>
                     <div
                         className={cn(
-                            "bg-primary text-white px-3 rounded-lg",
+                            "bg-primary text-white text-sm py-1 px-2 rounded-lg",
                             activeTab !== "all" ? "bg-[#E4E7EC]" : ""
                         )}
                     >
@@ -28,11 +28,11 @@ const TabFilter: React.FC<TabFilterProps> = ({ consultations, activeTab, setActi
             </TabFilterButton>
             <TabFilterButton onClick={() => setActiveTab("upcoming")} isActive={activeTab === "upcoming"}>
                 <div className="flex items-center gap-4">
-                    <Clock className={cn("w-5 h-5", activeTab !== "upcoming" ? "text-[#98A2B3]" : "text-primary")} />
-                    Upcoming Visits
+                    <Clock className={cn("w-4 h-4", activeTab !== "upcoming" ? "text-[#98A2B3]" : "text-primary")} />
+                    <span className="text-sm">Upcoming visits</span>
                     <div
                         className={cn(
-                            "bg-primary text-white px-3 rounded-lg",
+                            "bg-primary text-white text-sm py-1 px-2 rounded-lg",
                             activeTab !== "upcoming" ? "bg-[#E4E7EC]" : ""
                         )}
                     >
@@ -42,11 +42,11 @@ const TabFilter: React.FC<TabFilterProps> = ({ consultations, activeTab, setActi
             </TabFilterButton>
             <TabFilterButton onClick={() => setActiveTab("canceled")} isActive={activeTab === "canceled"}>
                 <div className="flex items-center gap-4">
-                    <Home className={cn("w-5 h-5", activeTab !== "canceled" ? "text-[#98A2B3]" : "text-primary")} />
-                    Canceled Visits
+                    <Home className={cn("w-4 h-4", activeTab !== "canceled" ? "text-[#98A2B3]" : "text-primary")} />
+                    <span className="text-sm">Cancelled visits</span>
                     <div
                         className={cn(
-                            "bg-primary text-white px-3 rounded-lg",
+                            "bg-primary text-white text-sm py-1 px-2 rounded-lg",
                             activeTab !== "canceled" ? "bg-[#E4E7EC]" : ""
                         )}
                     >
@@ -69,7 +69,7 @@ const TabFilterButton: React.FC<TabFilterButtonProps> = ({ isActive, onClick, ch
         <Button
             onClick={onClick}
             variant="outline"
-            className={cn("text-md p-8", isActive ? "bg-[#FFECE5] border-[#FCD2C2]" : "bg-[#F0F2F5] border-[#D0D5DD]")}
+            className={cn("text-md p-6", isActive ? "bg-[#FFECE5] border-[#FCD2C2]" : "bg-[#F0F2F5] border-[#D0D5DD]")}
         >
             {children}
         </Button>

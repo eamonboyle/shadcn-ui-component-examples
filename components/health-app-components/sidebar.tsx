@@ -88,7 +88,7 @@ const Sidebar = () => {
                             key={route.href}
                             href={route.href}
                             className={cn(
-                                "group flex p-3 w-full justify-start font-medium cursor-pointer hover:bg-[#FFECE5] rounded-lg transition",
+                                "group text-sm  flex p-3 w-full justify-start font-medium cursor-pointer hover:bg-[#FFECE5] rounded-lg transition",
                                 route.href === pathName ? "bg-[#FFECE5]" : "text-[#101928]"
                             )}
                         >
