@@ -169,7 +169,7 @@ const AppointmentsPage = () => {
     return (
         <div>
             <div className="p-4 space-y-4">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between">
                     <div>
                         <h1 className="text-2xl font-semibold mb-2">My Appointments</h1>
                         <p className="text-gray-500">Check and filter all your medical appointments here </p>
@@ -185,11 +185,11 @@ const AppointmentsPage = () => {
 
                 <TabFilter consultations={consultations} activeTab={activeTab} setActiveTab={handleTabChange} />
 
-                <div className="flex items-start gap-4">
-                    <div className="w-1/4">
+                <div className="flex flex-col xl:flex-row items-start gap-4">
+                    <div className="xl:w-1/4">
                         <CalendarCard />
                     </div>
-                    <div className="w-3/4">
+                    <div className="xl:w-3/4">
                         <div className="flex items-center justify-between py-2">
                             <h4 className="text-xl font-semibold">All Visits</h4>
                             <div className="flex items-center gap-2">

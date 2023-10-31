@@ -11,7 +11,7 @@ type TabFilterProps = {
 
 const TabFilter: React.FC<TabFilterProps> = ({ consultations, activeTab, setActiveTab }) => {
     return (
-        <div className="consultation-filter flex items-center gap-4">
+        <div className="consultation-filter flex flex-col lg:flex-row lg:items-center gap-4">
             <TabFilterButton onClick={() => setActiveTab("all")} isActive={activeTab === "all"}>
                 <div className="flex items-center gap-4">
                     <Cross className={cn("w-4 h-4", activeTab !== "all" ? "text-[#98A2B3]" : "text-primary")} />

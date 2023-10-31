@@ -10,7 +10,7 @@ import { Consultation } from "@/types/health-app.types";
 
 const ConsultDoctorPage = () => {
     const [activeTab, setActiveTab] = useState("ongoing");
-    const [consultations, setConsultations] = useState<Consultation[]>([
+    const [consultations] = useState<Consultation[]>([
         {
             id: 1,
             date: "2023-10-27",
@@ -171,13 +171,13 @@ const ConsultDoctorPage = () => {
 
     return (
         <div className="p-4 space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between">
                 <div>
                     <h1 className="text-2xl font-semibold mb-2">Consult a Doctor</h1>
                     <p className="text-gray-500">Check and filter all your medical appointments here </p>
                 </div>
 
-                <div>
+                <div className="mt-4 lg:mt-0">
                     <Button className="flex items-center gap-2 text-md">
                         <PlusCircle className="w-5 h-5" />
                         New Consultation
