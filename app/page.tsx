@@ -20,6 +20,11 @@ export default function Home() {
                     description="A display of what is possible with shadcn-ui and NextJS"
                     href="/health-app"
                 />
+                <HomePageTile
+                    title="Ecommerce App"
+                    description="A display of what is possible with shadcn-ui and NextJS"
+                    href="/ecommerce"
+                />
             </div>
         </div>
     );
